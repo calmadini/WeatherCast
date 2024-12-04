@@ -1,0 +1,152 @@
+header {
+    background: black;
+ }
+ * {
+    padding: 0;
+        margin: 0;
+        font-family: monospace;
+    }
+    ul {
+        list-style: none;
+        background: rgb(68, 125, 233);
+    }
+    ul li {
+    display: inline-block;
+    position: relative;
+    }
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: white;
+        text-decoration:none;
+        text-align: center;
+        font-size: 18px;
+    }
+    ul li ul.dropdown li {
+        display: block;
+    }
+    ul li ul.dropdown {
+        width: 100%;
+        background: rgb(59, 126, 228);
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    ul li a:hover {
+        background: #0b0c0c;
+    }
+    ul li:hover ul.dropdown {
+    display: block;
+    }   
+      
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        background-color: hsl(199, 54%, 81%);
+        color: hsl(224, 71%, 54%);
+        font-family: sans-serif;
+    }
+        
+    .header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-left{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        align-content: center;
+        margin: .5rem;
+        padding: .5rem;
+        border-right: 2px solid hsl(39, 84%, 32%);
+    }
+    .weather-icon {
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+    .weather-icon.large {
+        width: 50%;
+        height: 50%;
+    }
+    .header-current-temp {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    .header-right {
+        display: grid;
+        width: 50%;
+        justify-content: space-around;
+        gap: 0.5rem;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,auto);
+    }
+    .info-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .label {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.6rem;
+        color: hsl(39, 84%, 32%);
+    }
+    .value-sub-info {
+        font-weight: lighter;
+        font-size: 0.75rem;
+    }
+
+    .day-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 75px);
+        gap: 0.5rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .day-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid hsl(39, 84%, 32%);
+        border-radius: 0.25rem;
+        padding: 0.25rem;
+    }
+    .day-card-day {
+        font-size: 0.8rem;
+        color: hsl(39, 84%, 32%);
+        margin-top: 0.5rem;
+    }
+
+    .hour-section {
+        width: 100%;
+        text-align: center;
+        border-spacing: 0;
+    }
+    .hour-row {
+        background-color: rgb(221, 238, 248);
+    }
+    .hour-row:nth-child(2n) {
+        background-color: rgb(185, 224, 247); 
+    }
+    .hour-row > td {
+        padding: 0.25rem 0.5rem;
+    }
+
+    
+    footer{
+        background-color: rgb(90, 140, 235);
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+        position:sticky;
+    }
+        
+        
+
+
